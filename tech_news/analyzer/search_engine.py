@@ -1,6 +1,7 @@
 from tech_news.database import search_news
 from datetime import datetime
 
+
 # Requisito 6
 def search_by_title(title):
     news = []
@@ -15,7 +16,7 @@ def search_by_title(title):
 
 # Requisito 7
 def search_by_date(date):
-        try:
+    try:
         news = []
         date = datetime.fromisoformat(date).strftime("%d/%m/%Y")
         news_searched = search_news({"timestamp": {"$eq": date}})
@@ -24,6 +25,7 @@ def search_by_date(date):
             news.append((new["title"], new["url"]))
 
         return news
+
     except ValueError:
         raise ValueError("Data inválida")
 
@@ -32,7 +34,7 @@ def search_by_date(date):
 def search_by_tag(tag):
     news = []
     news_searched = search_news({"tags": {"$regex": tag, "$options": "i"}})
-    
+
     for new in news_searched:
         news.append((new["title"], new["url"]))
 
@@ -42,7 +44,9 @@ def search_by_tag(tag):
 # Requisito 9
 def search_by_category(category):
     news = []
-    news_searched = search_news({"category": {"$regex": category, "$options": "i"}})
+    news_searched = search_news(
+        {"category": {"$regex": category, "$options": "i"}}
+    )
 
     for new in news_searched:
         news.append((new["title"], new["url"]))
