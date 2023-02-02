@@ -45,6 +45,7 @@ def option_6():
 def option_7():
     return print("Encerrando script\n")
 
+
 # Requisito 12
 def analyzer_menu():
     option = input(
