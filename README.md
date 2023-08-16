@@ -1,10 +1,12 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# 💻 Projeto
+Uma aplicação de raspagem de dados, salva as notícias em um banco, permite realizar consultas nas notícias salvas e é possível listar as cinco categorias que aparecem com maior frequência.
+# 🚀 Tecnologias
+Este projeto foi desenvolvido com as seguintes tecnologias:
+- Python
+- MongoDB
+# 📌 Habilidades
+Neste projeto, desenvolvi as seguintes habilidades:
+- Aplicação de técnicas de raspagem de dados;
+- Extração de dados de conteúdo HTML;
+- Armazenamento dos dados obtidos em um banco de dados;
+- Testagem de método fazendo mock do retorno do banco de dados.
